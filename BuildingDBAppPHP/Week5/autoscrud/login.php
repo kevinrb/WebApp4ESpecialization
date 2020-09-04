@@ -27,7 +27,7 @@
 					// Redirect the browser to game.php
 					error_log("Login success ".$_POST['email']);
 					$_SESSION['name'] = $_POST['email'];
-					header("Location: view.php");
+					header("Location: index.php");
 					return;
 				}
 				else {
@@ -61,10 +61,10 @@
 				}
 			?>
 			<form method="POST">
-				<label for="email">User Name</label>
-				<input type="text" name="email" id="email" ><br/>
+				<label for="nam">User Name</label>
+				<input type="text" name="email" id="nam" ><br/>
 				<label for="id_1723">Password</label>
-				<input type="text" name="pass" id="id_1723" ><br/>
+				<input type="password" name="pass" id="id_1723" ><br/>
 				<input type="submit" value="Log In">
 				<input type="submit" name="cancel" value="Cancel">
 			</form>
